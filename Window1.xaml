@@ -1,0 +1,52 @@
+﻿<Window x:Class="LoginWPF.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoginWPF"
+        mc:Ignorable="d"
+        Title="Create account page" Height="550" Width="980">
+    <StackPanel>
+        <Grid Height="30"></Grid>
+        <Label Content="Create Account" HorizontalAlignment="Center" FontSize="40" FontWeight="Bold"></Label>
+        <Grid Height="30"></Grid>
+        <Grid Height="300">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Content="Introduceti numele de utilizator:  " HorizontalAlignment="Right" FontSize="18" Grid.Row="0" Grid.Column="0"></Label>
+            <Label Content="Introduceti o parola:  " HorizontalAlignment="Right" FontSize="18" Grid.Row="1"></Label>
+            <Label Content="Confirmati parola introdusa:  " HorizontalAlignment="Right" FontSize="18" Grid.Row="2"></Label>
+            <Label Content="Introduceti tara in care locuiti:  " HorizontalAlignment="Right" FontSize="18" Grid.Row="3"></Label>
+            <Label Content="Introduceti judetul in care locuiti:  " HorizontalAlignment="Right" FontSize="18" Grid.Row="4"></Label>
+            <Label Content="Introduceti orasul in care locuiti:  " HorizontalAlignment="Right" FontSize="18" Grid.Row="5"></Label>
+            <Label Content="Introduceti numarul la care locuiti:  " HorizontalAlignment="Right" FontSize="18" Grid.Row="6"></Label>
+            <TextBox x:Name="textBox1" Grid.Column="1"  Margin="60,0,48,5" Grid.Row="0" FontSize="20"></TextBox>
+            <PasswordBox x:Name="textBox2" Grid.Column="1" Margin="60,0,48,5" FontSize="20" Grid.Row="1"/>
+            <PasswordBox x:Name="textBox3" Grid.Column="1" Grid.Row="2"  Margin="60,0,48,5"  FontSize="20"></PasswordBox>
+            <TextBox x:Name="textBox4" Grid.Column="1" Grid.Row="3"  Margin="60,0,48,5"  FontSize="20"></TextBox>
+            <TextBox x:Name="textBox5" Grid.Column="1" Grid.Row="4" Margin="60,0,48,5"  FontSize="20"></TextBox>
+            <TextBox x:Name="textBox6" Grid.Column="1" Grid.Row="5" Margin="60,0,48,5"  FontSize="20"></TextBox>
+            <TextBox x:Name="textBox7" Grid.Column="1" Grid.Row="6" Margin="60,0,48,5"  FontSize="20"></TextBox>
+            <TextBox x:Name="textBox8" Grid.Column="1" Grid.Row="7" Margin="60,0,48,5"  FontSize="20"></TextBox>
+        </Grid>
+        <Grid Height="30"></Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="Buton1" Content="Creeaza contul!" Grid.Column="1" FontSize="20" Click="Buton1_Click" Margin="172,0,48,0"></Button>
+        </Grid>
+    </StackPanel>
+</Window>
